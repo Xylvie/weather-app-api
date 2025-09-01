@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.container .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: beige;
+    border-radius: 10px;
+    margin: 15px 15px 0px 15px;
+}
+
+.container .search-container input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.container .search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .search-container button:hover {
+    background-color: #0056b3;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-container #img-holder img {
+    width: 200px;
+    height: 200px;
+}
+
+.img-container #degrees-holder {
+    font-size: 3em;
+}
+
+.img-container #city-holder {
+    font-size: 2rem;
+}
+
+.details {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cols {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cols img {
+    width: 60px;
+    height: 60px;
+}
+
+.cols div p:first-child {
+    font-size: 1.5rem;
+}
+
+#details-container {
+    display: none;
+}
